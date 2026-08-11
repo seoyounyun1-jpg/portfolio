@@ -13,7 +13,7 @@ portfolio/
 ├── projects/               # 프로젝트 기록 (md 파일, 직접 작성)
 ├── data/                   # 분석에 사용한 데이터 (Google Drive에서 스크립트로 동기화)
 │   ├── mission-01-hotel/
-│   └── olist-project/
+│   └── sidepj1/
 └── scripts/
     └── sync_gdrive_data.py # Google Drive 데이터 다운로드 스크립트
 ```
@@ -69,7 +69,7 @@ python scripts/sync_gdrive_data.py --file-id <GOOGLE_DRIVE_FILE_ID> --target mis
 ```
 
 ```bash
-python scripts/sync_gdrive_data.py --file-id <GOOGLE_DRIVE_FILE_ID> --target olist-project
+python scripts/sync_gdrive_data.py --file-id <GOOGLE_DRIVE_FILE_ID> --target sidepj1
 ```
 
 파일은 `data/{target}/원본파일명` 경로에 저장됩니다.

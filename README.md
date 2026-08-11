@@ -12,8 +12,8 @@ portfolio/
 ├── missions/              # 미션 기록 (md 파일, 직접 작성)
 ├── projects/               # 프로젝트 기록 (md 파일, 직접 작성)
 ├── data/                   # 분석에 사용한 데이터 (Google Drive에서 스크립트로 동기화)
-│   ├── mission-01-hotel/
-│   └── sidepj1/
+│   ├── mission01/
+│   └── sideproject01/
 └── scripts/
     └── sync_gdrive_data.py # Google Drive 데이터 다운로드 스크립트
 ```
@@ -65,11 +65,11 @@ pip install -r requirements.txt
 Google Drive 파일 ID와 저장할 `data/` 하위 폴더명을 인자로 받아 원본 파일명 그대로 다운로드합니다. 파일이 50MB를 초과하면 경고 후 계속 진행할지 확인합니다.
 
 ```bash
-python scripts/sync_gdrive_data.py --file-id <GOOGLE_DRIVE_FILE_ID> --target mission-01-hotel
+python scripts/sync_gdrive_data.py --file-id <GOOGLE_DRIVE_FILE_ID> --target mission01
 ```
 
 ```bash
-python scripts/sync_gdrive_data.py --file-id <GOOGLE_DRIVE_FILE_ID> --target sidepj1
+python scripts/sync_gdrive_data.py --file-id <GOOGLE_DRIVE_FILE_ID> --target sideproject01
 ```
 
 파일은 `data/{target}/원본파일명` 경로에 저장됩니다.

@@ -25,7 +25,7 @@ def parse_args():
     )
     parser.add_argument("--file-id", required=True, help="Google Drive 파일 ID")
     parser.add_argument(
-        "--target", required=True, help="data/ 하위에 저장할 폴더명 (예: sprint-mission-01)"
+        "--target", required=True, help="data/ 하위에 저장할 폴더명 (예: 미션01)"
     )
     return parser.parse_args()
 
